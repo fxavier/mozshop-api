@@ -1,0 +1,2 @@
+ALTER TABLE venda
+ADD COLUMN numero VARCHAR(100);

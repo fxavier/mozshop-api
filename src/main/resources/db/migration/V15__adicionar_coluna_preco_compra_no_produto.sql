@@ -1,0 +1,2 @@
+ALTER TABLE produto
+ADD COLUMN preco_compra DECIMAL(10, 2) NOT NULL;
