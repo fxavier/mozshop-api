@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.context.ApplicationListener;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.mz.xavier.mozshopapi.event.CreatedResourceEvent;
+import com.mz.xavier.mozshopapi.event.RecursoCriadoEvent;
 
-public class CreatedResourceListener implements ApplicationListener<CreatedResourceEvent>{
+public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoEvent>{
 
 	@Override
-	public void onApplicationEvent(CreatedResourceEvent createdResourceEvent) {
+	public void onApplicationEvent(RecursoCriadoEvent createdResourceEvent) {
 		
 		HttpServletResponse response = createdResourceEvent.getResponse();
 		Long id = createdResourceEvent.getId();
